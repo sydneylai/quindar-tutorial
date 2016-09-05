@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Audacy Quindar Widgets AngularJS Standard </title>
+
+  <!-- build:css dist/groundtrack-thirdparty.css -->
+  <link rel="stylesheet" type="text/css" href="dist/widgets-thirdparty.css" />
+
+  <!-- replaced by minified version 
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  -->
+
+  <!-- custom CSS, e.g. Limitless -->
+  <link type="text/css" rel="stylesheet" href="app/styles/styles.css">
+  <link type="text/css" rel="stylesheet" href="app/styles/core.css">
+  <link type="text/css" rel="stylesheet" href="app/styles/components.css">
+  <link type="text/css" rel="stylesheet" href="app/styles/colors.css">
+
+  <!-- gridster -->
+  <link rel="stylesheet" href="app/styles/angular-gridster.min.css" />
+  <link rel="stylesheet" href="app/styles/gridsterDashboard.css" />
+
+  <!-- unused in this project
+  <link rel="stylesheet" href="app/styles/dropdown/angular-dropdowns.css" />
+  <link rel="stylesheet" href="app/styles/dropdown/normalize.css" />
+  <link rel="stylesheet" href="app/styles/dropdown/page.css" />
+  -->
+
+  <!-- quindar dashboard style - drop-down style -->
+  <link rel="stylesheet" href="app/styles/quindarWidgets.css" />
+
+  <!-- Dependencies: angularJS -->
+  <!-- replaced by minified version
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+  -->
+
+  <!-- Dependencies: pace, jquery, bootstrap, blockui -->
+  <!-- replaced by minified version
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
+  -->
+
+  <!-- custom scripts, e.g. Limitless -->
+  <!-- replaced by minified version
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+  -->
+
+  <!-- unused flot libraries in this project
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.categories.min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.pie.min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.resize.min.js"></script>
+  <script type="text/javascript" src="app/scripts/dropdown/angular-dropdowns.js"></script>
+  -->
+
+</head>
+
+<body ng-app="app" style="background-color:#020613">
+<div ng-controller="dashboardController">
+
+  <div class="navbar navbar-inverse header-highlight" >
+    <!-- Navbar header -->
+    <div class="navbar-header header-transition-hover" style="background-color:#020613; border-bottom: 2px solid #07D1EA">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/Quindar_Logo_White.png" alt="" style="height:30px">
+      </a>
+      <ul class="nav navbar-nav visible-xs-block">
+        <li>
+          <a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a>
+        </li>
+        <li>
+          <a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- /Navbar header -->
+
+    <!-- Navbar menus -->
+    <div class="navbar-collapse collapse" id="navbar-mobile" style="background-color:#020613 ; border-bottom: 2px solid #07D1EA">
+      
+      <!-- /Navbar icons -->
+      <ul class="nav navbar-nav navbar-right">
+        <!-- User dropdown -->
+        <!-- unused for alpha release 
+        <li ui-sref-active="active">
+          <a ui-sref="home">Home </a>
+        </li>
+        -->
+        <li ui-sref-active="active">
+          <a ui-sref="dashboard">Dashboard </a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="dashboardnoborder">Custom Dashboard </a>
+        </li> 
+        <!-- /User dropdown -->
+         
+      </ul>
+
+
+    </div>
+    <!-- /Navbar menus -->
+
+  </div>
+  <!-- /main navbar -->
+
+  <div id="mainContainer" class="header-transition-hover">
+    <div class="container col-md-2 ">
+      <div ui-view="sidebar"></div>
+    </div>
+    <div class="container col-md-10 ">
+      <div ui-view="body"></div>
+    </div>
+    <div class="container col-md-10 " style="background-color:#020613">
+      <div ui-view="dashboard"></div>
+    </div>
+    <div class="container col-md-12 ">
+      <div ui-view="dashboardnoborder"></div>
+    </div>
+  </div>
+  
+</div> 
+<!-- ng-controller=dashboardController -->
+
+<!-- build:js dist/widgets-thirdparty.js -->
+<script src="dist/widgets-thirdparty.js"></script>
+
+<script type="text/javascript" src="app/scripts/angular-gridster.min.js"></script>
+
+<!-- replaced by minified version
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+-->
+<script type="text/javascript" src="app/controllers/quindarWidgetsControllers.js"></script>
+<script type="text/javascript" src="app/directives/quindarWidgetsDirectives.js"></script>
+
+<script type="text/javascript" src="app/directives/angular-groundtrack.js"></script>
+<script type="text/javascript" src="app/factories/factory-groundtrack.js"></script>
+<script type="text/javascript" src="app/scripts/plugins/visualization/d3/topojson.js"  charset="utf-8"></script>
+
+<!-- replaced by minified version
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script> 
+-->
+<link rel="stylesheet" href="app/styles/widgets.css" />
+
+<!-- replaced by minified version
+<script src="http://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js"></script>
+-->
+
+<script type="text/javascript" src="app/scripts/js/jquery.flot.resize.js"></script>
+<script type="text/javascript" src="app/scripts/js/jquery.flot.axislabels.js"></script>
+<script type="text/javascript" src="app/scripts/js/jquery.flot.navigate.js"></script>
+<script type="text/javascript" src="app/scripts/js/jquery.flot.selection.js"></script>
+<script type="text/javascript" src="app/scripts/js/jquery.flot.time.js"></script>
+
+<script type="text/javascript" src="app/directives/angular-lineplot.js"></script>
+<script type="text/javascript" src="app/controllers/app-lineplot.js"></script>
+<script type="text/javascript" src="config/clientSettings.js"></script>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+define({  "name": "tutorial4b",  "version": "1.0.0",  "description": "basic web server",  "sampleUrl": false,  "apidoc": "0.2.0",  "generator": {    "name": "apidoc",    "time": "2016-08-23T18:34:34.098Z",    "url": "http://apidocjs.com",    "version": "0.16.1"  }});

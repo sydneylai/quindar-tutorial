@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+  <h3>Welcome to Quindar REST API Web Services</h3>
+  <hr />
+  <p>To test Quindar REST API:</p>
+  <ul>
+    <li>First REST API - to check if server has active heart-beats, click <a href="/verifyMe">here</a></li>
+    <li>Second REST API - to read telemetry, click <a href="/services/v1/position">here</a></li>
+    <li>Third REST API - to write new telemetry position data point to MongoDB, use the utility 'curl'. Refer to the example below</li>
+  </ul>
+  <br />
+  <p>
+  To test database write API, you can download and install the utility 'curl', and execute the command
+  'curl -X POST -H "Content-type: application/json" -d '{"vehicleId":"IBEX","timestamp":1457640420,"x":236294.1956, "y":116196.8879,"z":-34379.67682,"vx":-0.675287,"vy":0.508343,"vz":0.434496}' http://localhost:3000/services/v1/position' from a command window (on Windows), or a terminal (on MacOS or Linux). 
+  </p> 
+</body>
+</html>

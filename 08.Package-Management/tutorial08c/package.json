@@ -1,0 +1,20 @@
+{
+  "name": "tutorial08c",
+  "version": "0.0.1",
+  "devDependencies": {
+    "async": "^2.0.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "http": "0.0.0",
+    "nodemon": "^1.10.0",
+    "path": "^0.12.7",
+    "request": "^2.74.0"
+  },
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1"
+  }
+}

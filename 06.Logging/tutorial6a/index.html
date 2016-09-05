@@ -1,0 +1,16 @@
+<!doctype>
+<html>
+<head>
+</head>
+<body>
+  <h3>Welcome to Quindar Server-side Logging</h3>
+  <hr />
+  <p>NodeJS does not come with logging on its own. However, you can install 2 NPM packages (dependencies)
+that logs transactions and debugging messages</p>
+  <ul>
+    <li>Winston - similar to log4j or Java logging API, you can add debugging message. Refer to <a href="https://www.npmjs.com/package/winston">for details.</a></li>
+    <li>Morgan - it will log every console.log message to a pre-defined log file. Refer to <a href="https://www.npmjs.com/package/morgan">for details.</a></li>
+    <li>Log rotation - this will allow you to rotate log files once they are full. In other words, older log messages will be replaced by newer log messages to conserve disk space. For example, if you have a 2GB log file to store all log messages, over time your log file will grow to 2GB file size.  With log rotation, older log contents will be removed, and newer log contents will continue to insert into the log file to maintain the 2Gb file size. Refer to https://github.com/holidayextras/file-stream-rotator for examples.</li>
+  </ul>
+</body>
+</html>

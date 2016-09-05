@@ -1,0 +1,85 @@
+/* Style for widgets */
+
+/* Line Plot */
+.quindarlineplot {
+  width: 100%;
+  height: 100%;  
+  font-family: "Open Sans", Sans-serif;
+}
+
+.widget-container {
+  width: 100%;
+  height: 100%;
+  color: #FF6D00;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;	
+  padding: 20px 15px 15px 15px;
+  margin: 15px auto 30px auto;
+  border: 1px solid #ddd;
+  background: #242833;
+}
+
+.lineplotbutton {
+  font-family: "Open Sans", Sans-serif;
+  padding: 5px 10px;
+  background-color: #07D1EA;  
+  color: #F1F1F5;
+  font-size: 12px;
+}
+
+.listlabel {
+  font-family: "Open Sans", Sans-serif;
+  padding: 5px 5px;  
+  color: #F1F1F5;
+  background-color: #242833;
+  font-size: 14px;
+}
+
+.buttonOn{
+  background-color: #1072A4;
+}
+/****************/
+
+/* Ground Track */
+.ocean {
+  background: #242833; 	
+}
+
+.graticule {
+  fill: none;
+  stroke: #8B8C94;
+  stroke-opacity: .5;
+  stroke-width: .5px;
+}
+
+.land {
+  fill: #CFCFD5;
+  stroke: #020613;
+}
+
+.boundary {
+  fill: none;
+  stroke: #020613;
+  stroke-width: .5px;
+}
+
+.groundbutton {
+  font-family: "Open Sans", Sans-serif;	
+  padding: 5px 10px;
+  background-color: #07D1EA;  
+  color: #F1F1F5;
+  font-size: 10px;
+}
+
+.plane {
+  fill: #07D1EA;
+  stroke: #020613;
+	
+}
+
+.route {
+  fill: none;
+  stroke: #FF6D00;  
+}
+/****************/

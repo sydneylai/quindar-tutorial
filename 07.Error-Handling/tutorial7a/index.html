@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+  <h3>Welcome to Quindar REST API Web Services</h3>
+  <hr />
+  <p>To test error handling</p>
+  <ul>
+    <li>First REST API - to check if server has active heart-beats, click <a href="/verifyMe">here</a></li>
+    <li>Second REST API - to write new telemetry position data point to MongoDB, and if failed then throw error, using the utility 'curl'. Refer to the example below</li>
+  </ul>
+  <br />
+  <p>
+  To test database read API, you can download and install the utility 'curl', and execute the command
+  'curl -X GET -H "Content-type: application/json" http://localhost:3000/services/v1/position' from a command window (on Windows), or a terminal (on MacOS or Linux). 
+  </p> 
+</body>
+</html>
