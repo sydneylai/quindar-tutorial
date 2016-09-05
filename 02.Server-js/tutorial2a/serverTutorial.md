@@ -14,7 +14,7 @@ In case, if you want to clone the entire project then you can install "git" bina
 3. You need to create a local copy of this project. For example,
 
 ```
-git clone https://github.com/audacyDevOps/quindar-tutorials.git
+git clone git@github.com:quindar/quindar-tutorial.git
  ```
 
 ### How to Run the Demo
